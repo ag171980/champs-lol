@@ -11,7 +11,7 @@ function App() {
   const [champABuscar, setChampABuscar] = useState("")
 
   const getChamps = async () => {
-    const response = await axios.get("http://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion.json")
+    const response = await axios.get("https://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion.json")
     let arrAux = []
     let arrAux2 = []
     if (response.status === 200) {
