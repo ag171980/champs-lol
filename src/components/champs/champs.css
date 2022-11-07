@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600&display=swap");
+
+* {
+    transition: 0.5s all;
+}
+.champ {
+    margin: 20px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s all;
+    overflow: hidden;
+    background-color: black;
+}
+
+.champ img {
+    height: 330px;
+    object-fit: cover;
+    object-position: top;
+    width: 250px;
+    border-top-right-radius: 50px;
+    transition: 0.5s all;
+    /* height: 60px; */
+}
+.champ .name {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    transition: 0.5s all;
+}
+.champ .name h2 {
+    text-align: start;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    font-style: italic;
+    color: #d4af37;
+    text-transform: uppercase;
+}
+
+.champ:hover {
+    cursor: pointer;
+}
+.champ:hover img {
+    transform: scale(1.15);
+    border-top-right-radius: 0px;
+}
+
+.champ:hover .name {
+    background-color: #d4af37;
+}
+.champ:hover .name h2 {
+    color: white;
+    padding-left: 25px;
+}
