@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Champ from './components/champs/Champs';
+import { Animated } from "react-animated-css";
 import { FaSearch } from 'react-icons/fa';
 import './App.css';
 
@@ -58,7 +59,9 @@ function App() {
         {champsFill === true &&
           filteredData.map((champ, idx) => {
             return (
-              <Champ key={idx} dataChamp={champ} />
+              <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true} style={{ animationDelay: "0." + idx + "s" }}>
+                <Champ key={idx} dataChamp={champ} />
+              </Animated>
             )
           })
         }
