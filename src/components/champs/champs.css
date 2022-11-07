@@ -58,3 +58,22 @@
     color: white;
     padding-left: 25px;
 }
+
+@media (max-width: 870px) {
+    .champ {
+        height: 250px;
+    }
+    .champ img {
+        height: 250px;
+        width: 180px;
+    }
+}
+@media (max-width: 465px) {
+    .champ {
+        height: 200px;
+    }
+    .champ img {
+        height: 200px;
+        width: 140px;
+    }
+}

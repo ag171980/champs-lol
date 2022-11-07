@@ -21,6 +21,7 @@ h1 {
   position: relative;
   z-index: 10;
   margin: 0;
+  text-transform: uppercase;
 }
 .buscador {
   position: relative;
@@ -39,19 +40,20 @@ h1 {
   font-size: 15px;
   margin: 0;
   box-sizing: border-box;
-  
 }
 .buscador button {
   position: absolute;
   top: 50%;
   left: 7px;
   transform: translateY(-50%);
+  padding: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: none;
   border: none;
   color: #d4af37;
+  border-right: 1px solid #d4af37;
 }
 .champs {
   display: grid;
@@ -59,3 +61,19 @@ h1 {
   justify-content: center;
   padding: 20px;
 }
+
+@media (max-width: 1160px) {
+  .champs {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 660px) {
+  .champs {
+    grid-template-columns: auto auto;
+  }
+}
+/* @media (max-width: 580px) {
+  .champs {
+    grid-template-columns: auto;
+  }
+} */

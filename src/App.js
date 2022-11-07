@@ -36,7 +36,7 @@ function App() {
   let filteredData;
   if (champsFill) {
     filteredData = champs[0].filter((champ) => {
-      return (champABuscar === '') ? champ : champ.name.toLowerCase().includes(champABuscar)
+      return (champABuscar === '') ? champ : champ.name.toLowerCase().includes(champABuscar.toLowerCase())
     })
   }
 
