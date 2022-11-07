@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Champ from './components/champs/Champs';
